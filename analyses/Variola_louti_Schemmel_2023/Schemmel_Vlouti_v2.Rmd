@@ -28,42 +28,18 @@ library(itsadug)
 library(ggplot2)
 library(ggpubr)
 
-#VALO Reproduction Data & Cleaning
-setwd("~/Documents/research/VALO/Vlouti")
-valo_r<-read.csv("Reproduction_4_6_2021.csv")
-
-valo_r<-valo_r %>% subset(Species=="Variola louti") #N=273 
-valo_r$ScientificName<-valo_r$Species
-
-#load metadata and sampling data to link with reproduction information
-setwd("~/Documents/github/TBP")
-lhd<-read.csv("guam_7_22_2019.csv")
-
-lhd$Date<-as.Date(lhd$FishedDate, format = "%m/%d/%Y")
-lhd$Sex<-revalue(lhd$Sex, c("1 - Female"="F", "2 - Male"="M","3 - Unknown"="M"))
-
-
-setwd("~/Documents/research/VALO/Vlouti")
-
-lhd<-lhd%>% subset(ScientificName=="Variola louti")
-lhd$SampleID=lhd$SampleTag
-lhd<-lhd %>% select(SampleID,Length.cm., Weight.g., Sex, GonWeight, Date, Year, Month)
-
-v_r<-left_join(valo_r, lhd)
-
-#age data
-age<-read.csv("Age_VALO_March_2023.csv")
-valo_ar<-left_join(age, v_r, by="SampleID")
+#VALO Data 
+valo_ar<-read.csv("valo_data.csv")
 
 #sub data sets for plotting use later
 valo_ar$H_Sex<-as.factor(valo_ar$H_Sex)
-valo_ar_f<-valo_ar %>%
+valo_f<-valo_ar %>%
   subset(H_Sex=="F") #female
-valo_ar_m<-valo_ar %>%
+valo_m<-valo_ar %>%
   subset(H_Sex=="M" ) #male
-valo_ar_po<-valo_ar %>%
+valo_m_po<-valo_ar %>%
   subset(H_Sex=="M_PO" ) #male with primary oocytes
-valo_ar_t<-valo_ar %>%
+valo_t<-valo_ar %>%
   subset(H_Sex=="T" ) #transitional
 
 ```
@@ -74,7 +50,7 @@ First assess spawning season, then can assess L50. Need to constrain data for L5
 
 ```{r  spawningseason,  message=FALSE, warning=FALSE, include=TRUE, fig.cap="Female Guam Variola louti gonadosomatic index (GSI) versus fork length, and spawning capable and actively spawning female log gonad weight (GW) versus gonad free body weight (GFBW) (log GW = 1.3860 + GFBW * 0.0016, df = 40, R2=0.23) for fish sampled from Guam between 2010 and 2017. Spawning capable and actively spawning females are black, immature females are white, and all other female reproductive phases are grey."}
 
-gsi<- v_r%>% mutate(GSI=GonWeight/Weight.g.*100)
+gsi<- valo_ar%>% mutate(GSI=GonWeight/Weight.g.*100)
 gsi$Month<-month(gsi$Date, label=TRUE) #get monthly labels for summarizing and plotting
 
 #separate sexes for analysis
@@ -217,6 +193,7 @@ text(x = sz, y=104, label = sample_n , offset=10, cex = 1.0)}#too add sample siz
 gsi<-gsi %>% subset(M_VT==1) #functionally mature females
 gsi_m<-gsi_m %>% subset(Mature==1) #mature males
 
+gsi$Date<-as.Date(gsi$Date)
 gsi$lunar.phase<-lunar::lunar.phase(gsi$Date,shift=-10, name=8)
 lunar_total<-as.data.frame(gsi %>%
                             dplyr::group_by(lunar.phase)%>%
@@ -378,7 +355,7 @@ boot.est <- function(dataframe,xname,yname){
 }
 
 
-repro_f<-subset(v_r, H_Sex=="F")
+repro_f<-subset(valo_ar, H_Sex=="F")
 #repro_f<-subset(repro_f, Phase!="RE")
 repro_f <- repro_f[complete.cases(repro_f$Length.cm.),] 
 #repro_f<-repro_f %>% subset(Month=="Apr"|Month=="May"| Month=="Jun" |Month=="Jul" | Month=="Aug"|Month=="Sep")
@@ -421,12 +398,12 @@ lines(c(16,l50vt),c(.5,.5), lwd=2,col="grey",lty=1,font=2)
 valo_ar_f<-valo_ar %>%
   subset(H_Sex=="F")
 
-valo_ar_f<-valo_ar_f[complete.cases(valo_ar_f$reage),] #make sure there are no blanks in ages 
-abins.a50vt <- data.setup_age(valo_ar_f,"reage","M_VT") 
-glm.a50vt <- glm(M_VT ~ reage, family=binomial(link=logit), data=valo_ar_f)
-a50.civt <- model.ci(valo_ar_f,"reage","M_VT")
+valo_ar_f<-valo_ar_f[complete.cases(valo_ar_f$final_age),] #make sure there are no blanks in ages 
+abins.a50vt <- data.setup_age(valo_ar_f,"final_age","M_VT") 
+glm.a50vt <- glm(M_VT ~ final_age, family=binomial(link=logit), data=valo_ar_f)
+a50.civt <- model.ci(valo_ar_f,"final_age","M_VT")
 coef(glm.a50vt)
-length(valo_ar_f$reage)
+length(valo_ar_f$final_age)
 bcL_tlvt<-bootCase(glm.a50vt, R=1000)
 lrPerc <- function(cf,p) (log(p/(1-p))-cf[1])/cf[2]#p is the proportion
 a50vt<-lrPerc(coef(glm.a50vt), 0.5)
@@ -435,11 +412,11 @@ a50civt<-quantile(a50vt, c(0.25,0.975))
 a50vt <- est(coef(glm.a50vt),.5)
 
 #physiological
-abins.a50ca <- data.setup_age(valo_ar_f,"reage","M_CA") 
-glm.a50ca <- glm(M_CA ~ reage, family=binomial(link=logit), data=valo_ar_f)
-a50.cica <- model.ci(valo_ar_f,"reage","M_CA")
+abins.a50ca <- data.setup_age(valo_ar_f,"final_age","M_CA") 
+glm.a50ca <- glm(M_CA ~ final_age, family=binomial(link=logit), data=valo_ar_f)
+a50.cica <- model.ci(valo_ar_f,"final_age","M_CA")
 
-length(valo_ar_f$reage)
+length(valo_ar_f$final_age)
 bcL_tlca<-bootCase(glm.a50ca, R=1000)
 lrPerc <- function(cf,p) (log(p/(1-p))-cf[1])/cf[2]#p is the proportion
 a50ca<-lrPerc(coef(glm.a50ca), 0.5)
@@ -449,16 +426,16 @@ a50ca <- est(coef(glm.a50ca),.5)
 
 
 #####Size at sex change######
-v_r$SexID<-v_r$H_Sex
-v_r$SexID<-revalue(v_r$SexID, c("F"=0, "T"=1, "M"=1,"M_PO"=1))
-v_r$SexID<-as.factor(v_r$SexID)
-v_r<-v_r[complete.cases(v_r$Length.cm.),]
+valo_ar$SexID<-valo_ar$H_Sex
+valo_ar$SexID<-revalue(valo_ar$SexID, c("F"=0, "T"=1, "M"=1,"M_PO"=1))
+valo_ar$SexID<-as.factor(valo_ar$SexID)
+valo_ar<-valo_ar[complete.cases(valo_ar$Length.cm.),]
 
 #remove rows with blanks
-v_r<-v_r[!(is.na(v_r$SexID) | v_r$SexID==""), ] #removed two rows with blank H_Sex
-lbins.l50sex <- data.setup(v_r,"Length.cm.","SexID") 
-glm.l50sex <- glm(SexID ~ Length.cm., family=binomial(link=logit), data=v_r)
-l50.cisex <- model.ci(v_r,"Length.cm.","SexID")
+valo_ar<-valo_ar[!(is.na(valo_ar$SexID) | valo_ar$SexID==""), ] #removed two rows with blank H_Sex
+lbins.l50sex <- data.setup(valo_ar,"Length.cm.","SexID") 
+glm.l50sex <- glm(SexID ~ Length.cm., family=binomial(link=logit), data=valo_ar)
+l50.cisex <- model.ci(valo_ar,"Length.cm.","SexID")
 
 bcL_tlsex<-bootCase(glm.l50sex, R=1000)
 lrPerc <- function(cf,p) (log(p/(1-p))-cf[1])/cf[2]#p is the proportion
@@ -481,14 +458,14 @@ valo_ar$SexID<-valo_ar$H_Sex
 valo_ar$SexID<-revalue(valo_ar$SexID, c("F"=0, "T"=1, "M"=1,"M_PO"=1))
 valo_ar$SexID<-as.factor(valo_ar$SexID)
 valo_ar<-valo_ar[complete.cases(valo_ar$SexID),] 
-valo_ar<-valo_ar[complete.cases(valo_ar$reage),] 
+valo_ar<-valo_ar[complete.cases(valo_ar$final_age),] 
 valo_ar<-valo_ar[complete.cases(valo_ar$Length.cm.),] ###went from 273 to 257
 valo_ar<-valo_ar[!(is.na(valo_ar$SexID) | valo_ar$SexID==""), ] #removed two rows with blank H_Sex
 
-abins.a50sex <- data.setup_age(valo_ar,"reage","SexID") 
+abins.a50sex <- data.setup_age(valo_ar,"final_age","SexID") 
 abins.a50sex[12,1]<-14 #not sure why it dropped the last age
-glm.a50sex <- glm(SexID ~ reage, family=binomial(link=logit), data=valo_ar)
-a50.cisex <- model.ci(valo_ar,"reage","SexID")
+glm.a50sex <- glm(SexID ~ final_age, family=binomial(link=logit), data=valo_ar)
+a50.cisex <- model.ci(valo_ar,"final_age","SexID")
 
 length(valo_ar$Length.cm.)
 bcL_tlsex<-bootCase(glm.a50sex, R=1000)
@@ -553,7 +530,7 @@ l50bubble<- l50bubble+ scale_y_continuous(expand = c(0, 0), limits = c(-0.01, 1.
 
 #Age at maturity
  a50bubble<- ggplot()+
-  geom_smooth(data = valo_f, aes(x = reage, y = M_VT),
+  geom_smooth(data = valo_f, aes(x = final_age, y = M_VT),
               method = "glm", method.args = list(family = "binomial"), 
               se = FALSE, color="black") +
   geom_point(data=abins.a50vt, aes(x = binl, y =b.p, size=sum), alpha=0.5) +
@@ -586,7 +563,7 @@ l50bubble<- l50bubble+ scale_y_continuous(expand = c(0, 0), limits = c(-0.01, 1.
   
 ##length at sex change
   l50sexbubble<- ggplot()+
-    geom_smooth(data = v_r, aes(x = Length.cm., y = as.numeric(as.character(SexID))),
+    geom_smooth(data = valo_ar, aes(x = Length.cm., y = as.numeric(as.character(SexID))),
                 method = "glm", method.args = list(family = "binomial"), 
                 se = FALSE, color="black") +
     geom_point(data=lbins.l50sex, aes(x = binl, y =b.p, size=sum), alpha=0.5) +
@@ -620,7 +597,7 @@ l50bubble<- l50bubble+ scale_y_continuous(expand = c(0, 0), limits = c(-0.01, 1.
   valo_ar$SexID[valo_ar$SexID==' ']=NA
   valo_ar$SexID= droplevels(valo_ar$SexID)
   a50sexbubble<- ggplot()+
-    geom_smooth(data = valo_ar, aes(x = reage, y = as.numeric(as.character(SexID))),
+    geom_smooth(data = valo_ar, aes(x = final_age, y = as.numeric(as.character(SexID))),
                 method = "glm", method.args = list(family = "binomial"), 
                 se = FALSE, color="black") +
        geom_point(data=abins.a50sex, aes(x = binl, y =b.p, size=sum), alpha=0.5) +
@@ -733,35 +710,35 @@ mtext(text="Fork Length (cm)",side=1,line=2,adj=0.22,outer=TRUE, cex=1.4)
 mtext(text="Frequency",side=2,line=0,outer=TRUE, cex=1.4)
 
 #age
-hist(valo_f_u$reage, right=FALSE, main="" ,xaxs="i",yaxs="i", breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20), xaxt="n",las=1 , col="grey", cex=2, cex.lab=2, cex.axis=2)
+hist(valo_f_u$final_age, right=FALSE, main="" ,xaxs="i",yaxs="i", breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20), xaxt="n",las=1 , col="grey", cex=2, cex.lab=2, cex.axis=2)
 axis(1,at= seq(0,18,by=2) , labels = seq(0,18,by=2) ,cex=2, cex.lab=2, cex.axis=2)
 text(0.2,18.5, "Undeveloped",cex=2, cex.lab=2, cex.axis=2,pos = 4)
 box(bty = "l")
-hist(valo_f_d$reage,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="",xlab="" ,ylim=c(0,20),xaxt="n", las=1 , col="grey",cex=2, cex.lab=2, cex.axis=2)
+hist(valo_f_d$final_age,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="",xlab="" ,ylim=c(0,20),xaxt="n", las=1 , col="grey",cex=2, cex.lab=2, cex.axis=2)
 axis(1,at= seq(0,18,by=2) , labels = seq(0,18,by=2),cex=2, cex.lab=2, cex.axis=2 )
 text(0.2,18.5, "Developing",cex=2, cex.lab=2, cex.axis=2,pos = 4)
 box(bty = "l")
-hist(valo_f_sc$reage, right=FALSE,main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="",xlab="" ,ylim=c(0,20),xaxt="n", las=1 , col="grey", cex=2, cex.lab=2, cex.axis=2)
+hist(valo_f_sc$final_age, right=FALSE,main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="",xlab="" ,ylim=c(0,20),xaxt="n", las=1 , col="grey", cex=2, cex.lab=2, cex.axis=2)
 axis(1,at= seq(0,18,by=2) , labels = seq(0,18,by=2),cex=2, cex.lab=2, cex.axis=2  )
 text(0.2,18.5, "Spawning Capable",cex=2, cex.lab=2, cex.axis=2,pos = 4)
 box(bty = "l")
-hist(valo_f_rg$reage,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20),xaxt="n",las=1 , col="grey", cex=2, cex.lab=2, cex.axis=2)
+hist(valo_f_rg$final_age,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20),xaxt="n",las=1 , col="grey", cex=2, cex.lab=2, cex.axis=2)
 axis(1,at= seq(0,18,by=2) , labels = seq(0,18,by=2),cex=2, cex.lab=2, cex.axis=2  )
 text(0.2,18.5, "Regressing",cex=2, cex.lab=2, cex.axis=2,pos = 4)
 box(bty = "l")
-hist(valo_f_re$reage,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20),xaxt="n",las=1 , col="grey", cex=2, cex.lab=2, cex.axis=2)
+hist(valo_f_re$final_age,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20),xaxt="n",las=1 , col="grey", cex=2, cex.lab=2, cex.axis=2)
 axis(1,at= seq(0,18,by=2) , labels = seq(0,18,by=2),cex=2, cex.lab=2, cex.axis=2  )
 text(0.2,18.5, "Regenerating",cex=2, cex.lab=2, cex.axis=2,pos = 4)
 box(bty = "l")
-hist(valo_t$reage,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20),xaxt="n",las=1 , col="grey",cex=2, cex.lab=2, cex.axis=2)
+hist(valo_t$final_age,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20),xaxt="n",las=1 , col="grey",cex=2, cex.lab=2, cex.axis=2)
 axis(1,at= seq(0,18,by=2) , labels = seq(0,18,by=2) ,cex=2, cex.lab=2, cex.axis=2 )
 text(0.2,18.5, "Transitional",cex=2, cex.lab=2, cex.axis=2,pos = 4)
 box(bty = "l")
-hist(valo_t_po$reage,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20),xaxt="n",las=1 , col="grey",cex=2, cex.lab=2, cex.axis=2)
+hist(valo_t_po$final_age,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18, 1), ylab="", xlab="" ,ylim=c(0,20),xaxt="n",las=1 , col="grey",cex=2, cex.lab=2, cex.axis=2)
 axis(1,at= seq(0,18,by=2) , labels = seq(0,18,by=2),cex=2, cex.lab=2, cex.axis=2  )
 text(0.2,18.5, "Male with PO",cex=2, cex.lab=2, cex.axis=2,pos = 4)
 box(bty = "l")
-hist(valo_m$reage,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18,by=1), ylab="", xlab="Age (yrs)" ,ylim=c(0,20),xaxt="n",las=1 , col="grey",cex=2, cex.lab=2, cex.axis=2)
+hist(valo_m$final_age,right=FALSE, main="" ,xaxs="i",yaxs="i",breaks=seq(0,18,by=1), ylab="", xlab="Age (yrs)" ,ylim=c(0,20),xaxt="n",las=1 , col="grey",cex=2, cex.lab=2, cex.axis=2)
 axis(1,at= seq(0,18,by=2) , labels = seq(0,18,by=2), cex=2, cex.lab=2, cex.axis=2  )
 text(0.2,18.5, "Male", cex=2, cex.lab=2, cex.axis=2,pos = 4)
 box(bty = "l")
@@ -774,15 +751,15 @@ mtext(text="Age (yrs)",side=1,line=2, adj=.8,outer=TRUE, cex=1.4)}
 ## Male and female size and age differences
 
 ```{r sex statistics, message=FALSE, warning=FALSE, include=TRUE}
-males<-rbind(valo_ar_m, valo_ar_po)
+males<-rbind(valo_m, valo_t_po)
 ks.test(valo_ar_f$Length.cm.,males$Length.cm.,   alternative = "greater")
-ks.test(valo_ar_f$reage,males$reage,   alternative = "greater")
+ks.test(valo_ar_f$final_age,males$final_age,   alternative = "greater")
 
 t.test(valo_ar_f$Length.cm., males$Length.cm.)
-t.test(valo_ar_f$reage, males$reage)
-max(males$reage, na.rm=TRUE)
-mean(males$reage, na.rm=TRUE)
-mean(valo_ar_f$reage, na.rm=TRUE)
+t.test(valo_ar_f$final_age, males$final_age)
+max(males$final_age, na.rm=TRUE)
+mean(males$final_age, na.rm=TRUE)
+mean(valo_ar_f$final_age, na.rm=TRUE)
 
 
 ```

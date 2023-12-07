@@ -99,14 +99,14 @@ stanc("stan_vonBL0.stan")
 
 
 #data
-valo_age<-read.csv("Age_VALO_March_2023.csv")
-valo_age<-valo_age[complete.cases(valo_age$reage),]
+valo_age<-read.csv("valo_ar.csv")
+valo_age<-valo_age[complete.cases(valo_age$final_age),]
 valo_age<-valo_age[complete.cases(valo_age$Length.cm.),]
 nrow(valo_age)
 
 ##glm von B for comparision
 
-modvb<- nls(Length.cm. ~ Linf-(Linf-L0)*exp(-k*reage),
+modvb<- nls(Length.cm. ~ Linf-(Linf-L0)*exp(-k*final_age),
             data= valo_age, 
             start = list (Linf = 50,
                           k = 0.5,
@@ -138,7 +138,7 @@ for(i in 1:nrow(new_glm)){
 
 
 #select data for stan model
-standata <- list(N=nrow(valo_age),age=valo_age$reage,length=valo_age$Length.cm.)
+standata <- list(N=nrow(valo_age),age=valo_age$final_age,length=valo_age$Length.cm.)
 #run stan vonBL0 model
 vonbL0<-stan(file="stan_vonBL0.stan", data=standata)
 print(vonbL0, pars = c('Linf','k','L0'))
