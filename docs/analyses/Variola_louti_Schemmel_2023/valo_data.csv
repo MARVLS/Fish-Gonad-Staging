@@ -1,0 +1,300 @@
+"","Species.x","SampleID","Otolith_Weight","final_age","H_Sex","Oocyte_Stage","Phase","Mature","M_CA","M_VT","CN","PN","CA","VTI","VTII","VTIII","Muscel.Bundles","Blood.Vessels","POFS","atresia","Length.cm.","Weight.g.","GonWeight","Date","Year","Month"
+"1","Variola louti","GGBS-103",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"2","Variola louti","GVDP-271",NA,2,"F","PO","U",NA,0,0,"x","x","","","","","","","","",24.1,240,0.2,2015-08-01,2015,8
+"3","Variola louti","GECC-1048",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"4","Variola louti","GECC-1057",0.027,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"5","Variola louti","GECC-1099",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"6","Variola louti","GVDP-296",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"7","Variola louti","GVDP-317",0.0249,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"8","Variola louti","GVDP-313",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"9","Variola louti","GVDP-363",NA,2,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"10","Variola louti","GECC-241",NA,2,"F","PO","U",NA,0,0,"x","x","","","","","","","","",22.3,210,0.057,2011-06-13,2011,6
+"11","Variola louti","GGBS-116",NA,2,"F","PO","U",NA,0,0,"x","x","","","","","","","","",20.3,124,0,2010-07-18,2010,7
+"12","Variola louti","GGBS-117",NA,2,"F","PO","U",NA,0,0,"x","x","","","","","","","","",22,164,0,2010-07-18,2010,7
+"13","Variola louti","GGBS-175",NA,3,"F","VTII","D",NA,1,1,"x","x","x","x","x","","x","x","","alpha and beta",27.5,358,1,2010-09-01,2010,9
+"14","Variola louti","GGBS-184",NA,3,"F","CA","D",NA,1,0,"x","x","x","","","","x","x","","",28.9,437,1,2010-09-13,2010,9
+"15","Variola louti","GGBS-213",NA,3,"F","PO","RE",NA,1,1,"x","x","","","","","","x","","",29.8,453,0,2010-09-22,2010,9
+"16","Variola louti","GECC-98",NA,3,"F","PO","U",NA,0,0,"x","","","","","","","","","",27.6,419,0.285,2011-03-15,2011,3
+"17","Variola louti","GECC-196",NA,3,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","delta",30.1,494,0.382,2011-05-18,2011,5
+"18","Variola louti","GECC-492",NA,3,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","","","","beta and delta",28.2,440,4.6,2011-10-17,2011,10
+"19","Variola louti","GECC-561",NA,3,"F","PO","RG",NA,1,1,"x","x","","","","","x","x","","beta",27.5,382,1.1,2012-02-13,2012,2
+"20","Variola louti","GCDD-125",NA,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"21","Variola louti","GCDD-126",NA,3,"F","PO","RG",NA,1,1,"","x","x","","","","","","","alpha, beta, delta",24,267,0.8,2012-10-24,2012,10
+"22","Variola louti","GECC-873",0.0279,2,"F","PO","U",NA,0,0,"x","x","","","","","","","","",22.5,191,0.2,2013-09-01,2013,9
+"23","Variola louti","GVDP-55",NA,3,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","delta",30.1,556,0.5,2014-07-13,2014,7
+"24","Variola louti","GVDP-188",NA,3,"F","PO","U",NA,0,0,"x","x","","","","","","","","",25.7,264,0.3,2015-04-28,2015,4
+"25","Variola louti","GVDP-242",NA,3,"F","PO","RE",NA,1,1,"x","x","","","","","","x","","delta",30.4,507,0.7,2015-06-20,2015,6
+"26","Variola louti","GECC-1035",NA,3,"F","PO","RE",NA,1,1,"X","X","","","","","X","X","","",29,457,0.8,2015-04-18,2015,4
+"27","Variola louti","GECC-1135",0.0375,3,"F","PO","U",NA,0,0,"x","x","","","","","","","","",26.5,312,0.4,2015-08-03,2015,8
+"28","Variola louti","GECC-1050",0.0318,3,"T","PO","T",NA,1,1,"X","X","","","","","","","","",27.3,317,1.3,2015-04-25,2015,4
+"29","Variola louti","GVDP-11",0.0237,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"30","Variola louti","GVDP-307",0.035,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"31","Variola louti","GVDP-301",0.0312,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"32","Variola louti","GVDP-314",0.0223,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"33","Variola louti","GVDP-311",0.0288,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"34","Variola louti","GVDP-323",0.0347,3,"F","VTIII","SC",NA,1,1,"x","x","x","x","","x","","","","alpha and beta",25,301,3.5,2015-08-28,2015,8
+"35","Variola louti","GVDP-322",0.0254,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"36","Variola louti","GVDP-335",0.036,3,"F","PO","U",NA,0,0,"x","x","","","","","","","","",26.5,353,0.2,2015-09-13,2015,9
+"37","Variola louti","GVDP-534",0.0227,3,"F","PO","U",NA,0,0,"x","x","","","","","","","","",20.7,172,0.3,2016-10-02,2016,10
+"38","Variola louti","GVDP-342",NA,3,"F","VTIII","SC",NA,1,1,"x","x","x","x","","x","x","x","","alpha",27.5,321,2.4,2015-09-13,2015,9
+"39","Variola louti","GVDP-361",0.031,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"40","Variola louti","GVDP-401",NA,3,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","","","","",24.4,240,4.4,2016-02-29,2016,2
+"41","Variola louti","GVDP-405",NA,3,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","","","","",30.1,452,5,2016-03-01,2016,3
+"42","Variola louti","GECC-559",NA,3,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","","","moderate","alpha",27.7,363,3.4,2012-01-05,2012,1
+"43","Variola louti","GECC-560",NA,3,"T","PO","T",NA,1,1,"x","x","x","","","","","","","alpha, beta",25.6,259,0.4,2012-02-13,2012,2
+"44","Variola louti","GVDP-290",0.0291,3,"F","PO","U",NA,0,0,"x","x","","","","","","","","",22.7,191,0.2,2015-08-25,2015,8
+"45","Variola louti","GVDP-375",0.0376,3,"F","CA","D",NA,1,1,"x","x","x","","","","x","x","","delta",30.2,454,0.9,2015-10-13,2015,10
+"46","Variola louti","GGBS-102",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"47","Variola louti","GGBS-111",NA,4,"F","PO","U",NA,1,1,"x","x","","","","","x","","","",26,301,1,2010-07-18,2010,7
+"48","Variola louti","GGBS-114",NA,4,"F","PO","U",NA,0,0,"x","x","","","","","","","","",28.4,328,0,2010-07-18,2010,7
+"49","Variola louti","GGBS-115",NA,4,"F","PO","U",NA,0,0,"x","x","","","","","","","","",30,408,0,2010-07-18,2010,7
+"50","Variola louti","GGBS-162",NA,4,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","alpha and beta",31.8,559,1,2010-08-23,2010,8
+"51","Variola louti","GGBS-253",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"52","Variola louti","GECC-6",NA,4,"M_PO","PO","D",1,1,1,"x","","","","","","","","","",35.6,772,1,2010-12-02,2010,12
+"53","Variola louti","GECC-21",NA,4,"M_PO","PO","SC",1,1,1,"x","","","","","","","","","",31.6,561,0.9,2010-12-14,2010,12
+"54","Variola louti","GECC-75",NA,4,"M_PO","PO","D",1,1,1,"x","","","","","","","","","",29.9,492,0.915,2011-02-08,2011,2
+"55","Variola louti","GECC-87",NA,4,"F","VTIII","SC",NA,1,1,"","x","x","x","","x","x","x","","delta",28.9,427,9.795,2011-03-02,2011,3
+"56","Variola louti","GECC-114",NA,4,"M","","D",1,NA,NA,"","","","","","","","","","",33.7,786,1.5,2011-03-28,2011,3
+"57","Variola louti","GECC-186",NA,4,"F","VTIII","SC",1,1,1,"","x","x","x","x","","","","","",35.8,840,8.915,2011-05-17,2011,5
+"58","Variola louti","GECC-189",NA,4,"T","PO","T",0,1,1,"x","x","","","","","x","x","","",32.6,658,0.784,2011-05-17,2011,5
+"59","Variola louti","GECC-243",NA,4,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","delta",29,441,0.856,2011-06-13,2011,6
+"60","Variola louti","GECC-493",NA,4,"F","VTIII","AS",NA,1,1,"","x","x","x","x","x","","","recent","",29.5,483,15.7,2011-10-17,2011,10
+"61","Variola louti","GECC-518",NA,4,"F","CA","RG",NA,1,1,"x","x","x","","","","x","x","","alpha, beta, delta",32,575,1.9,2011-11-21,2011,11
+"62","Variola louti","GCDD-20",NA,4,"F","CA","D",1,1,1,"x","x","x","","","","x","x","","",32.6,630,2,2012-05-20,2012,5
+"63","Variola louti","GCDD-26",NA,4,"F","CA","RG",1,1,1,"x","x","x","","","","x","x","","",31.6,528,1,2012-05-28,2012,5
+"64","Variola louti","GCDD-33",0.039,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"65","Variola louti","GCDD-130",0.0497,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"66","Variola louti","GECC-714",NA,4,"F","VTIII","RG",NA,1,1,"","x","x","x","","x","x","x","","alpha, beta",30.1,536,14.2,2012-12-03,2012,12
+"67","Variola louti","GCDD-152",NA,4,"F","CA","RG",NA,1,1,"x","x","x","","","","x","x","","beta and delta",35.4,776,2.2,2013-02-07,2013,2
+"68","Variola louti","GCDD-166",NA,4,"F","VTIII","SC",NA,0,1,"","x","x","x","x","x","","","","",32,567,12.4,2013-03-12,2013,3
+"69","Variola louti","GCDD-177",NA,4,"F","H","AS",NA,1,1,"","x","x","x","x","x","x","x","recent","",36.5,1030,13.8,2013-03-24,2013,3
+"70","Variola louti","GECC-766",NA,4,"T","H","T",NA,1,1,"","x","","","","","x","x","","beta, delta",32.9,754,4.2,2013-03-18,2013,3
+"71","Variola louti","GECC-778",NA,4,"F","GVM","AS",NA,1,1,"","x","x","x","x","x","x","x","","",29.2,484,13,2013-04-01,2013,4
+"72","Variola louti","GECC-888",NA,4,"F","VTIII","AS",NA,1,1,"","x","x","","","x","x","x","recent/moderate","alpha",34.4,726,5.9,2014-03-30,2014,3
+"73","Variola louti","GECC-917",NA,3,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"74","Variola louti","GECC-937",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"75","Variola louti","GECC-940",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"76","Variola louti","GVDP-53",NA,4,"F","PO","RE",NA,1,1,"x","x","","","","","","","","beta and delta",34.3,766,1,2014-07-13,2014,7
+"77","Variola louti","GVDP-54",0.045,4,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",30.5,559,0.6,2014-07-13,2014,7
+"78","Variola louti","GVDP-180",NA,4,"F","PO","RG",NA,1,1,"x","x","","","","","","","","alpha, beta",34.5,724,2.7,2015-04-26,2015,4
+"79","Variola louti","GVDP-184",NA,4,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","delta",29.1,517,1.6,2015-04-29,2015,4
+"80","Variola louti","GVDP-209",NA,4,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",28.7,450,0.5,2015-05-29,2015,5
+"81","Variola louti","GVDP-241",NA,4,"F","VTIII","SC",NA,1,1,"x","x","x","x","","x","x","x","","alpha and beta",32.5,652,7.5,2015-06-20,2015,6
+"82","Variola louti","GECC-1047",NA,3,"F","PO","U",NA,0,0,"X","X","","","","","","","","",27.6,329,0.3,2015-04-17,2015,4
+"83","Variola louti","GECC-1075",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"84","Variola louti","GECC-1119",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"85","Variola louti","GECC-1122",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"86","Variola louti","GECC-1136",NA,4,"F","PO","RE",NA,1,1,"x","x","","","","","","x","","delta",28,382,0.7,2015-08-03,2015,8
+"87","Variola louti","GECC-1151",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"88","Variola louti","GECC-1161",0.0349,4,"M_PO","PO","SC",1,1,1,"","x","","","","","","","","",34.2,787,1.2,2015-09-01,2015,9
+"89","Variola louti","GECC-1187",0.0475,4,"M_PO","PO","SC",1,1,1,"","x","","","","","","","","",38.7,1133,0.8,2015-10-12,2015,10
+"90","Variola louti","GVDP-294",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"91","Variola louti","GVDP-297",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"92","Variola louti","GVDP-299",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"93","Variola louti","GVDP-568",0.0419,4,"F","VTIII","SC",NA,1,1,"x","x","","x","x","x","","","","",35.1,852,22.6,2016-11-22,2016,11
+"94","Variola louti","GVDP-701",0.0383,4,"F","VTIII","SC",NA,1,1,"x","x","x","x","","x","","x","","",29.9,473,11,2017-03-03,2017,3
+"95","Variola louti","GVDP-704",0.0446,4,"F","VTIII","SC",NA,1,1,"x","x","x","","x","x","","","","",37.6,1082,19.6,2017-03-06,2017,3
+"96","Variola louti","GECC-1506",0.0379,4,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",26.3,270,0.4,2017-08-10,2017,8
+"97","Variola louti","GVDP-703",0.0447,4,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","","","","",35,816,20.3,2017-03-06,2017,3
+"98","Variola louti","GVDP-702",0.0394,4,"F","VTII","D",NA,1,1,"x","x","x","x","x","","x","x","","delta",36.7,851,7,2017-03-03,2017,3
+"99","Variola louti","GECC-1007",0.0428,4,"F","H","AS",NA,1,1,"X","X","X","X","","X","","","recent","",30.3,467,17.8,2015-02-18,2015,2
+"100","Variola louti","GVDP-320",0.0462,4,"F","PO","RE",NA,1,1,"x","x","","","","","","x","","",31.7,543,0.5,2015-08-29,2015,8
+"101","Variola louti","GVDP-318",0.038,4,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","delta",25.4,264,0.5,2015-08-29,2015,8
+"102","Variola louti","GVDP-316",0.046,4,"F","PO","RE",NA,1,1,"x","x","","","","","","","","",29.6,435,0.5,2015-08-29,2015,8
+"103","Variola louti","GVDP-321",0.0353,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"104","Variola louti","GVDP-337",0.0418,4,"F","PO","U",NA,0,0,"x","x","","","","","x","x","","",28.4,356,0.1,2015-09-13,2015,9
+"105","Variola louti","GVDP-350",0.0379,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"106","Variola louti","GVDP-348",NA,4,"F","CA","RG",NA,1,1,"x","x","x","","","","x","x","","beta, delta",29.1,460,0.7,2015-09-14,2015,9
+"107","Variola louti","GVDP-351",NA,4,"F","PO","U",NA,0,0,"x","x","","","","","","","","",26.9,336,0.2,2015-09-14,2015,9
+"108","Variola louti","GVDP-353",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"109","Variola louti","GVDP-359",NA,4,"F","PO","RE",NA,1,1,"x","x","","","","","","x","","delta",29.4,394,0.4,2015-10-02,2015,10
+"110","Variola louti","GVDP-362",NA,4,"F","VTI","RG",NA,1,1,"x","x","x","x","","","x","x","","alpha",29.1,387,0.6,2015-10-02,2015,10
+"111","Variola louti","GVDP-364",NA,4,"T","PO","T",NA,NA,NA,"x","x","","","","","x","x","","delta",29.9,441,0.5,2015-10-02,2015,10
+"112","Variola louti","GVDP-366",NA,4,"F","PO","U",NA,0,0,"x","x","","","","","","","","",25.5,265,0.2,2015-10-02,2015,10
+"113","Variola louti","GECC-142",NA,4,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"114","Variola louti","GGBS-161",NA,4,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","","x","","",33.9,746,5,2010-08-23,2010,8
+"115","Variola louti","GECC-532",NA,4,"F","CA","RG",NA,1,1,"x","x","x","","","","x","x","","alpha, beta, detla",31.6,622,1.1,2011-12-19,2011,12
+"116","Variola louti","GGBS-112",NA,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",30.1,439,1,2010-07-18,2010,7
+"117","Variola louti","GGBS-146",NA,5,"T","PO","T",NA,1,1,"x","x","","","","","","","","",31.4,534,0,2010-08-06,2010,8
+"118","Variola louti","GGBS-148",NA,5,"M_PO","PO","SC",1,1,1,"x","x","","","","","","","","beta",37.7,1181,2,2010-08-13,2010,8
+"119","Variola louti","GGBS-183",NA,5,"F","CA","RG",NA,1,1,"x","x","x","","","","x","x","","beta",36,867,4,2010-09-13,2010,9
+"120","Variola louti","GGBS-194",NA,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"121","Variola louti","GECC-19",NA,5,"M_PO","PO","SC",1,1,1,"x","","","","","","","","","",37.7,954,2.8,2010-12-14,2010,12
+"122","Variola louti","GECC-20",NA,5,"T","PO","T",NA,1,1,"x","x","","","","","","","","",34.9,787,2.3,2010-12-14,2010,12
+"123","Variola louti","GECC-63",NA,5,"M_PO","PO","SC",1,1,1,"x","","","","","","","","","",35.6,835,0.69,2011-01-31,2011,1
+"124","Variola louti","GECC-76",NA,5,"F","GVM","AS",NA,1,1,"x","x","x","x","x","x","x","x","","beta",33.6,714,9.584,2011-02-08,2011,2
+"125","Variola louti","GECC-85",NA,5,"M","","SC",1,NA,NA,"","","","","","","","","","",38,1096,1.52,2011-03-02,2011,3
+"126","Variola louti","GECC-169",NA,5,"F","PO","RE",1,1,1,"","x","","","","","x","x","","",31.2,549,1.509,2011-05-02,2011,5
+"127","Variola louti","GECC-242",NA,5,"T","PO","T",NA,1,1,"x","x","","","","","","","","",32.1,648,0.644,2011-06-13,2011,6
+"128","Variola louti","GECC-244",NA,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","delta",29.5,467,0.868,2011-06-13,2011,6
+"129","Variola louti","GECC-298",NA,5,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","","","","beta",38.5,1072,35.071,2011-07-18,2011,7
+"130","Variola louti","GECC-468",NA,5,"M_PO","PO","SC",1,1,1,"x","x","","","","","","","","",33.1,667,1.36,2011-10-04,2011,10
+"131","Variola louti","GECC-494",NA,5,"F","VTIII","SC",NA,1,1,"","x","x","x","x","x","x","x","","alpha, beta, delta",39.2,1217,13.7,2011-10-17,2011,10
+"132","Variola louti","GECC-503",NA,5,"F","PO","RG",NA,1,1,"x","x","x","","","","x","x","","alpha, delta",34.1,777,2,2011-10-25,2011,10
+"133","Variola louti","GECC-542",NA,5,"F","CA","RG",NA,1,1,"x","x","x","","","","x","x","","alpha, beta, detla",32.6,613,1.5,2011-12-26,2011,12
+"134","Variola louti","GCDD-6",NA,5,"M","","SC",1,NA,NA,"","","","","","","","","","",35.6,842,0.5,2012-04-26,2012,4
+"135","Variola louti","GCDD-1",NA,5,"M_PO","PO","D",1,1,1,"","x","","","","","x","x","","gamma",33.2,697,0.5,2012-02-13,2012,2
+"136","Variola louti","GCDD-134",NA,5,"F","VTIII","SC",NA,1,1,"","x","x","x","x","x","","","","delta",36.5,952,41.7,2012-12-03,2012,12
+"137","Variola louti","GECC-715",NA,5,"F","VTIII","SC",NA,1,1,"","x","x","x","x","x","x","x","","beta, delta",33.7,822,12.5,2012-12-03,2012,12
+"138","Variola louti","GECC-729",NA,5,"M","","SC",1,NA,NA,"","","","","","","","","","",38.9,1086,1.6,2013-02-04,2013,2
+"139","Variola louti","GCDD-167",NA,5,"M","","D",1,NA,NA,"","","","","","","","","","",34,644,1.1,2013-03-12,2013,3
+"140","Variola louti","GECC-905",NA,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",26.2,300,0.4,2014-04-12,2014,4
+"141","Variola louti","GECC-961",NA,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"142","Variola louti","GVDP-4",NA,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"143","Variola louti","GVDP-87",NA,5,"M_PO","PO","SC",1,1,1,"x","","","","","","","","","",31.9,604,0.6,2014-09-01,2014,9
+"144","Variola louti","GVDP-167",NA,5,"M","","D",1,NA,NA,"","","","","","","","","","",36.3,987,1.1,2015-04-12,2015,4
+"145","Variola louti","GVDP-171",NA,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","beta/detla",34.5,626,1.5,2015-04-22,2015,4
+"146","Variola louti","GVDP-181",NA,5,"M","","SC",1,NA,NA,"","","","","","","","","","",35.6,723,0.5,2015-04-26,2015,4
+"147","Variola louti","GVDP-268",NA,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",31.6,528,0.8,2015-08-01,2015,8
+"148","Variola louti","GVDP-274",NA,5,"M","","D",1,NA,NA,"","","","","","","","","","",29.1,435,0.4,2015-08-01,2015,8
+"149","Variola louti","GECC-1139",NA,5,"M_PO","PO","SC",1,1,1,"","x","","","","","","","","",40.6,1347,1.6,2015-08-01,2015,8
+"150","Variola louti","GECC-1150",NA,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",36.8,816,0.8,2015-08-29,2015,8
+"151","Variola louti","GVDP-292",NA,5,"F","PO","U",NA,0,0,"x","x","","","","","","x","","",27.5,351,0.2,2015-08-26,2015,8
+"152","Variola louti","GVDP-579",0.0437,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"153","Variola louti","GVDP-309",0.046,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"154","Variola louti","GVDP-303",0.0525,5,"F","PO","RE",NA,1,1,"x","x","","","","","","x","","",29.3,366,0.4,2015-08-26,2015,8
+"155","Variola louti","GVDP-302",0.0463,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",28,323,0.2,2015-08-26,2015,8
+"156","Variola louti","GVDP-319",0.0474,5,"F","PO","U",NA,0,0,"x","x","","","","","","","","",28.8,377,0.4,2015-08-29,2015,8
+"157","Variola louti","GVDP-312",0.044,5,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"158","Variola louti","GVDP-338",0.0575,5,"F","PO","RE",NA,1,1,"x","x","x","","","","x","x","","alpha and beta",31.3,529,1.4,2015-09-13,2015,9
+"159","Variola louti","GVDP-336",0.0503,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","","","delta",31.2,552,0.7,2015-09-13,2015,9
+"160","Variola louti","GVDP-334",0.0501,5,"F","VTIII","SC",NA,1,1,"x","x","x","","","x","x","x","","alpha and beta",30.7,451,3.8,2015-09-13,2015,9
+"161","Variola louti","GVDP-332",0.0548,5,"F","CA","RG",NA,1,1,"x","x","x","","","","","","","beta",32.8,592,1.1,2015-09-13,2015,9
+"162","Variola louti","GVDP-331",NA,5,"F","PO","RE",NA,1,1,"x","x","","","","","","","","delta",27.8,355,0.5,2015-09-06,2015,9
+"163","Variola louti","GVDP-349",0.0512,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",36.6,823,1.4,2015-09-14,2015,9
+"164","Variola louti","GVDP-577",0.0541,5,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","x","x","","",33,722,6.1,2016-11-28,2016,11
+"165","Variola louti","GVDP-538",0.0429,5,"M_PO","PO","SC",1,1,1,"x","x","","","","","","","","",40,1170,1.7,2016-10-09,2016,10
+"166","Variola louti","GVDP-570",NA,5,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","","","moderate","",38.6,1014,21.6,2016-11-26,2016,11
+"167","Variola louti","GVDP-360",NA,5,"F","VTI","D",NA,1,1,"x","x","x","x","","","","","","alpha",29.7,445,1,2015-10-02,2015,10
+"168","Variola louti","GVDP-367",NA,5,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","delta",29.1,402,0.5,2015-10-02,2015,10
+"169","Variola louti","GVDP-400",NA,5,"F","VTIII","SC",NA,1,1,"","x","x","","x","x","","","","",30,577,23.2,2016-02-29,2016,2
+"170","Variola louti","GVDP-408",NA,5,"M_PO","PO","SC",1,1,1,"x","x","","","","","","","","",35,761,1.2,2016-03-07,2016,3
+"171","Variola louti","GGBS-186",NA,5,"F","VTIII","SC",NA,1,1,"x","x","x","x","x","x","x","x","old","delta",34.3,735,7,2010-09-13,2010,9
+"172","Variola louti","GGBS-99",NA,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"173","Variola louti","GGBS-113",NA,6,"M_PO","PO","SC",1,1,1,"x","x","","","","","","","","",33.2,607,0,2010-07-18,2010,7
+"174","Variola louti","GGBS-182",NA,6,"M","","D",1,NA,NA,"","","","","","","","","","",39.9,1220,3,2010-09-13,2010,9
+"175","Variola louti","GGBS-248",NA,6,"M_PO","","SC",1,NA,NA,"","","","","","","","","","",39,1044,1,2010-10-11,2010,10
+"176","Variola louti","GECC-74",NA,6,"M","","SC",1,NA,NA,"","","","","","","","","","",38.9,1163,1.313,2011-02-07,2011,2
+"177","Variola louti","GECC-140",NA,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"178","Variola louti","GECC-141",NA,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"179","Variola louti","GECC-151",NA,6,"M","","RG",1,NA,NA,"","","","","","","","","","",42.4,1491,1.977,2011-04-10,2011,4
+"180","Variola louti","GECC-159",NA,6,"M","","SC",1,NA,NA,"","","","","","","","","","",42.6,1491,2.63,2011-04-29,2011,4
+"181","Variola louti","GECC-220",NA,6,"F","PO","RG",NA,1,1,"x","x","","","","","","x","","delta",37.4,885,0.778,2011-06-01,2011,6
+"182","Variola louti","GECC-245",NA,6,"M_PO","PO","D",1,NA,NA,"x","x","","","","","","","","",36.6,944,0.977,2011-06-13,2011,6
+"183","Variola louti","GECC-543",NA,6,"M_PO","PO","SC",1,1,1,"x","","","","","","","","","",37.1,889,1.7,2011-12-26,2011,12
+"184","Variola louti","GECC-558",NA,6,"F","H","AS",NA,1,1,"x","x","x","x","","","","","","alpha, beta",37,729,43.5,2012-01-05,2012,1
+"185","Variola louti","GCDD-4",NA,6,"M","","SC",1,NA,NA,"","","","","","","","","","",37.9,970,0.5,2012-03-26,2012,3
+"186","Variola louti","GCDD-30",NA,6,"F","VTIII","SC",1,1,1,"x","x","x","x","x","x","","","","",37.9,1047,5.7,2012-05-29,2012,5
+"187","Variola louti","GECC-634",NA,6,"F","H","AS",NA,1,1,"","x","x","x","x","x","","","","",33.8,618,29.1,2012-07-16,2012,7
+"188","Variola louti","GCDD-66",NA,6,"F","VTII","D",NA,1,1,"","x","x","x","x","","x","x","","beta, delta",32.5,566,3.7,2012-08-26,2012,8
+"189","Variola louti","GCDD-72",NA,6,"F","CA","RG",NA,1,1,"","x","x","","","","x","x","","beta, delta",33.1,613,1.8,2012-08-28,2012,8
+"190","Variola louti","GCDD-138",0.0625,6,"F","H","AS",NA,1,1,"","x","x","x","x","","","","recent","",37,926,82.9,2012-12-10,2012,12
+"191","Variola louti","GCDD-139",NA,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"192","Variola louti","GCDD-146",0.062,6,"M_PO","PO","SC",1,1,1,"x","","","","","","","","","",43.5,1531,2.2,2013-01-16,2013,1
+"193","Variola louti","GECC-736",NA,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"194","Variola louti","GVDP-50",NA,6,"M_PO","PO","SC",1,1,1,"x","","","","","","","","","",43.5,1434,1.5,2014-06-12,2014,6
+"195","Variola louti","GVDP-51",NA,6,"T","PO","T",1,1,1,"x","x","","","","","","","","",37.7,1064,0.9,2014-06-12,2014,6
+"196","Variola louti","GECC-986",NA,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"197","Variola louti","GVDP-172",NA,6,"M","","D",1,NA,NA,"","","","","","","","","","",34,646,1.8,2015-04-22,2015,4
+"198","Variola louti","GVDP-273",NA,6,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",31.5,470,0.8,2015-08-01,2015,8
+"199","Variola louti","GECC-1041",NA,6,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"200","Variola louti","GECC-1045",NA,6,"F","GVM","AS",NA,1,1,"X","X","","","","","","","","alpha",34.2,580,6.4,2015-04-17,2015,4
+"201","Variola louti","GECC-1046",NA,6,"M_PO","PO","SC",1,1,1,"","x","","","","","","","","",35.8,820,0.7,2015-04-17,2015,4
+"202","Variola louti","GECC-1056",NA,6,"M_PO","PO","SC",1,1,1,"","X","","","","","","","","",36.5,817,1,2015-05-08,2015,5
+"203","Variola louti","GECC-1058",NA,6,"F","PO","RG",NA,1,1,"X","X","","","","","X","X","","beta",34,574,1.9,2015-05-08,2015,5
+"204","Variola louti","GECC-1155",NA,6,"F","PO","RG",NA,1,1,"","x","","","","","x","x","","alpha and beta",31.7,600,1.4,2015-08-29,2015,8
+"205","Variola louti","GVDP-298",NA,6,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",30.3,488,0.5,2015-08-26,2015,8
+"206","Variola louti","GVDP-35",0.0492,6,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",31.2,528,1.1,2014-06-04,2014,6
+"207","Variola louti","GVDP-308",0.0569,6,"M_PO","PO","SC",1,1,1,"x","x","","","","","","","","",30.9,482,0.5,2015-08-26,2015,8
+"208","Variola louti","GVDP-305",0.0615,6,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",32.5,498,0.4,2015-08-26,2015,8
+"209","Variola louti","GVDP-341",NA,6,"F","PO","U",NA,0,0,"x","x","","","","","","","","",29.6,390,0.3,2015-09-13,2015,9
+"210","Variola louti","GVDP-344",NA,6,"F","PO","RG",NA,1,1,"x","x","x","","","","x","x","","beta, delta",36.5,829,1.5,2015-09-14,2015,9
+"211","Variola louti","GVDP-346",NA,6,"T","PO","T",NA,1,1,"x","x","","","","","","","","",36.7,868,0.8,2015-09-14,2015,9
+"212","Variola louti","GVDP-354",NA,6,"F","PO","U",NA,0,0,"x","x","","","","","","","","",30.3,420,0.7,2015-09-14,2015,9
+"213","Variola louti","GVDP-357",NA,6,"F","CA","RG",NA,1,1,"x","x","x","","","","x","x","","beta",33.7,598,1.4,2015-10-02,2015,10
+"214","Variola louti","GVDP-358",NA,6,"F","PO","RG",NA,1,1,"x","x","","","","","x","x","","beta, delta",32.6,527,0.8,2015-10-02,2015,10
+"215","Variola louti","GGBS-144",NA,6,"F","CA","D",NA,0,1,"x","x","x","","","","","","","aplha",34.1,698,2,2010-08-06,2010,8
+"216","Variola louti","GGBS-181",NA,7,"M_PO","PO","SC",1,1,1,"","x","","","","","","","","beta",40.4,1234,1,2010-09-13,2010,9
+"217","Variola louti","GECC-5",NA,7,"M","","SC",1,NA,NA,"","","","","","","","","","",43.5,1627,3,2010-11-29,2010,11
+"218","Variola louti","GECC-167",NA,7,"F","PO","RE",1,1,1,"","x","","","","","x","x","","",40.3,1152,1.757,2011-05-02,2011,5
+"219","Variola louti","GECC-185",NA,7,"M_PO","PO","SC",1,1,1,"","x","","","","","x","x","","",40.8,1317,1.331,2011-05-17,2011,5
+"220","Variola louti","GECC-326",NA,7,"M_PO","PO","D",1,1,1,"x","x","","","","","x","x","","",40.1,1267,1.28,2011-08-08,2011,8
+"221","Variola louti","GECC-327",NA,7,"M","","SC",1,NA,NA,"","","","","","","","","","",37.9,921,1.11,2011-08-08,2011,8
+"222","Variola louti","GECC-531",NA,7,"T","PO","T",NA,1,1,"x","x","","","","","","","","alpha and delta",35.4,738,0.5,2011-12-19,2011,12
+"223","Variola louti","GECC-557",NA,7,"F","PO","SC",NA,1,1,"x","x","x","x","x","x","x","x","","delta",38.3,1106,15.6,2012-01-05,2012,1
+"224","Variola louti","GCDD-34",NA,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"225","Variola louti","GCDD-124",0.0727,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"226","Variola louti","GCDD-153",NA,7,"M","","D",1,NA,NA,"","","","","","","","","","",36.5,800,1.6,2013-02-11,2013,2
+"227","Variola louti","GCDD-155",0.07,7,"M","","SC",1,NA,NA,"","","","","","","","","","",38.4,957,1.2,2013-02-19,2013,2
+"228","Variola louti","GVDP-49",NA,7,"M_PO","PO","D",1,1,1,"x","","","","","","","","","",45.5,1617,1.6,2014-06-12,2014,6
+"229","Variola louti","GVDP-72",NA,7,"M_PO","PO","D",1,1,1,"X","X","","","","","X","X","","",35.2,717,0.8,2014-08-24,2014,8
+"230","Variola louti","GECC-985",NA,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"231","Variola louti","GVDP-272",NA,7,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",33.3,608,1.4,2015-08-01,2015,8
+"232","Variola louti","GVDP-709",0.0775,7,"M","","SC",1,NA,NA,"","","","","","","","","","",39.6,1200,2.8,2017-03-14,2017,3
+"233","Variola louti","GVDP-310",0.0629,7,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",30.3,527,1.1,2015-08-26,2015,8
+"234","Variola louti","GVDP-325",0.0694,7,"M_PO","PO","SC",1,NA,NA,"","","","","","","","","","",37.8,832,0.7,2015-08-30,2015,8
+"235","Variola louti","GVDP-324",0.0696,7,"M","","SC",1,NA,NA,"","","","","","","","","","",38,954,2,2015-08-28,2015,8
+"236","Variola louti","GVDP-340",0.0775,7,"M_PO","PO","SC",1,1,1,"x","x","","","","","","","","",40.3,1116,1.2,2015-09-13,2015,9
+"237","Variola louti","GVDP-339",0.0695,7,"M","","SC",1,NA,NA,"","","","","","","","","","",35.6,737,0.8,2015-09-13,2015,9
+"238","Variola louti","GVDP-333",0.0786,7,"M_PO","PO","SC",1,1,1,"x","","","","","","","","","",35.8,729,0.7,2015-09-13,2015,9
+"239","Variola louti","GVDP-345",NA,7,"M","","SC",1,NA,NA,"","","","","","","","","","",35.9,687,0.5,2015-09-14,2015,9
+"240","Variola louti","GVDP-365",NA,7,"T","PO","T",NA,NA,NA,"x","x","","","","","","x","","delta",33.1,595,1.1,2015-10-02,2015,10
+"241","Variola louti","GECC-622",NA,7,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"242","Variola louti","GECC-523",NA,7,"M_PO","PO","D",1,1,1,"x","","","","","","","","","",46.2,1719,1.5,2011-11-29,2011,11
+"243","Variola louti","GECC-504",NA,7,"M_PO","PO","D",1,1,1,"x","x","","","","","","","","",43.4,1557,1.9,2011-10-25,2011,10
+"244","Variola louti","GECC-221",NA,7,"M","","SC",1,NA,NA,"","","","","","","","","","",42.5,1407,1.052,2011-06-01,2011,6
+"245","Variola louti","GGBS-98",NA,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"246","Variola louti","GGBS-110",NA,8,"M","","SC",1,NA,NA,"","","","","","","","","","",38.5,986,2,2010-07-18,2010,7
+"247","Variola louti","GGBS-198",NA,8,"M","","D",1,NA,NA,"","","","","","","","","","",44.5,1670,2,2010-09-15,2010,9
+"248","Variola louti","GGBS-246",NA,8,"M","","SC",1,NA,NA,"","","","","","","","","","",42.2,1373,3,2010-10-11,2010,10
+"249","Variola louti","GECC-56",NA,8,"M","","SC",1,NA,NA,"","","","","","","","","","",38.6,1094,0.5,2011-01-10,2011,1
+"250","Variola louti","GECC-168",NA,8,"","","",NA,NA,NA,"","","","","","","","","","",42.9,1304,0.64,2011-05-02,2011,5
+"251","Variola louti","GCDD-32",0.0855,8,"M","","RG",1,NA,NA,"","","","","","","","","","",39.4,704,0.1,2012-06-09,2012,6
+"252","Variola louti","GECC-609",NA,8,"M_PO","PO","D",1,1,1,"x","","","","","","","","","",43.3,1598,2.1,2012-05-14,2012,5
+"253","Variola louti","GCDD-123",NA,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"254","Variola louti","GVDP-70",0.087,8,"M","","SC",1,NA,NA,"","","","","","","","","","",35.1,696,0.8,2014-08-23,2014,8
+"255","Variola louti","GVDP-85",NA,8,"M_PO","PO","D",1,1,1,"x","","","","","","","","","",33.7,603,1,2014-09-01,2014,9
+"256","Variola louti","GVDP-182",NA,8,"M","","D",1,NA,NA,"","","","","","","","","","",40.7,1205,1,2015-04-26,2015,4
+"257","Variola louti","GVDP-210",NA,8,"","","",NA,NA,NA,"","","","","","","","","","",35.6,688,0.6,2015-05-29,2015,5
+"258","Variola louti","GVDP-269",NA,8,"M","","SC",1,NA,NA,"","","","","","","","","","",39,819,0.5,2015-08-01,2015,8
+"259","Variola louti","GVDP-270",0.08,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"260","Variola louti","GECC-1149",NA,8,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","beta and delta",36,807,1.3,2015-08-29,2015,8
+"261","Variola louti","GVDP-295",0.0843,8,"M_PO","PO","D",1,1,1,"x","x","","","","","x","","","",35.6,689,0.8,2015-08-26,2015,8
+"262","Variola louti","GVDP-300",NA,8,"M","","SC",1,NA,NA,"","","","","","","","","","",35.1,708,1.1,2015-08-26,2015,8
+"263","Variola louti","GVDP-306",0.0779,8,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",33,476,0.5,2015-08-26,2015,8
+"264","Variola louti","GVDP-315",0.0776,8,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",36.2,810,0.8,2015-08-29,2015,8
+"265","Variola louti","GVDP-352",NA,8,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","delta",36.8,887,1.5,2015-09-14,2015,9
+"266","Variola louti","GVDP-355",NA,8,"M","","SC",1,NA,NA,"","","","","","","","","","",38.7,912,0.5,2015-10-02,2015,10
+"267","Variola louti","GECC-908",NA,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"268","Variola louti","GECC-1154",0.0884,8,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"269","Variola louti","GCDD-44",NA,9,"M","","SC",1,NA,NA,"","","","","","","","","","",42,1390,1,2012-07-24,2012,7
+"270","Variola louti","GCDD-108",NA,9,"F","VTIII","SC",NA,1,1,"","x","x","x","x","x","","","","delta",40,1132,42.2,2012-10-07,2012,10
+"271","Variola louti","GCDD-136",0.081,9,"M","","SC",1,NA,NA,"","","","","","","","","","",44,1540,3,2012-12-10,2012,12
+"272","Variola louti","GECC-1148",NA,9,"M_PO","PO","SC",1,1,1,"","x","","","","","x","x","","",35.3,788,0.6,2015-08-29,2015,8
+"273","Variola louti","GECC-1152",NA,9,"F","PO","RG",NA,1,1,"x","x","x","","","","x","x","","beta, delta",36.6,835,1.7,2015-08-29,2015,8
+"274","Variola louti","GECC-1153",NA,9,"M_PO","PO","SC",1,1,1,"x","","","","","","","","","",39.2,1009,0.7,2015-08-29,2015,8
+"275","Variola louti","GVDP-293",NA,9,"F","PO","RE",NA,1,1,"x","x","","","","","x","x","","",34.8,608,1.2,2015-08-26,2015,8
+"276","Variola louti","GVDP-347",0.085,9,"M","","D",1,NA,NA,"","","","","","","","","","",38.2,870,0.8,2015-09-14,2015,9
+"277","Variola louti","GGBS-168",NA,10,"M","","RE",1,NA,NA,"","","","","","","","","","",41.7,1343,2,2010-08-30,2010,8
+"278","Variola louti","GECC-633",NA,10,"M_PO","PO","D",1,1,1,"x","","","","","","","","","",40.6,1039,1,2012-07-16,2012,7
+"279","Variola louti","GECC-1059",0.095,10,"M","","SC",1,NA,NA,"","","","","","","","","","",49.7,2044,2.6,2015-05-12,2015,5
+"280","Variola louti","GECC-1121",NA,10,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"281","Variola louti","GVDP-304",0.09,10,"M","","SC",1,NA,NA,"","","","","","","","","","",38.7,982,0.7,2015-08-26,2015,8
+"282","Variola louti","GECC-308",NA,14,"M","","SC",1,NA,NA,"","","","","","","","","","",47.1,1678,1.347,2011-07-25,2011,7
+"283","Variola louti","GCDD-137",0.093,12,"M","","SC",1,NA,NA,"","","","","","","","","","",45.5,1618,2.1,2012-12-10,2012,12
+"284","Variola louti","GECC-297",0.0963,12,"F","CA","RG",NA,1,1,"x","x","x","","","","x","x","","alpha and beta",40.2,1072,3.612,2011-07-18,2011,7
+"285","Variola louti","GCDD-8",0.1,13,"M","","SC",1,NA,NA,"","","","","","","","","","",42.1,1401,1,2012-04-30,2012,4
+"286","Variola louti","GVDP-356",0.107,12,"M","","SC",1,NA,NA,"","","","","","","","","","",39.1,842,0.5,2015-10-02,2015,10
+"287","Variola louti","GECC-1055",0.1139,15,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"288","Variola louti","GECC-530",NA,17,"M","","SC",1,NA,NA,"","","","","","","","","","",46.1,1758,2,2011-12-19,2011,12
+"289","Variola louti","GGBS-163",NA,NA,"M","","SC",1,NA,NA,"","","","","","","","","","",42,1293,2,2010-08-23,2010,8
+"290","Variola louti","GGBS-212",NA,NA,"F","VTII","RG",NA,1,1,"x","x","x","x","x","","x","x","","alpha, beta, delta",25.1,297,1,2010-09-22,2010,9
+"291","Variola louti","GGBS-247",NA,12,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"292","Variola louti","GECC-569",NA,NA,"M","","D",1,0,0,"","","","","","","","","","",44.9,1418,2.7,2012-04-09,2012,4
+"293","Variola louti","GCDD-45",NA,NA,"F","GVM","AS",1,1,1,"","x","","x","x","x","","","possibly old","",37.4,1064,19.4,2012-07-24,2012,7
+"294","Variola louti","GVDP-84",NA,3,"F","PO","U",NA,0,0,"x","x","","","","","","x","","",24.3,228,0.4,2014-08-30,2014,8
+"295","Variola louti","GVDP-705",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"296","Variola louti","GECC-454",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"297","Variola louti","GECC-456",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"298","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"299","","",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
