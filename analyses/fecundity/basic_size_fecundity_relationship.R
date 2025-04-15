@@ -1,0 +1,98 @@
+# Basic size-fecundity relationship for fish
+# Description: Fit a power function to fish size and fecundity data
+# Contact: sabrina.beyer@noaa.gov, NOAA Northwest Fisheries Science Center
+
+# The data: 
+# 1) fish size (length or weight)
+# 2) fecundity (obtained by autodiametric, gravimetric, or other fecundity method)
+
+# Fitting a functional relationship:
+# Fecundity often increases as a power function of body size (length or weight)
+# of the form: fecundity = alpha * length or weight ^ beta
+
+# Estimate the parameters of the size-fecundity relationship (alpha and beta)  
+# by linear regression in log-space:
+#    1) log(fecundity) = log(alpha) + beta * log(length or weight)
+
+# Back-transform (and bias-correct) parameters to normal-space:
+#    2) fecundity = alpha * length or weight ^ beta
+
+
+# clear work space
+rm(list=ls())
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Example: Fit a length-fecundity relationship----
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Bias correction function----
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~
+  # The bias correction function returns the mean (instead of median) of the
+  # scaling parameter (alpha) from the linear log-space regression parameter estimate
+  # Background:
+      # log-normal distribution: lognormal(u,sd^2)
+      # median: exp(u)
+      # mean:   exp(u + sd^2/2), same as exp(u)*exp(0.5*sd^2)
+  bias_correct <- function(model){
+    alpha_med  <- exp(model$coefficients[1])
+    beta       <- model$coefficients[2]
+    sdres      <- sd(model$residuals) 
+    alpha_mean <- alpha_med*exp(0.5*sdres^2)  
+    return(as.numeric(c(alpha_mean, beta)))
+  }
+
+
+# ~~~~~~~~~~~~~~~~~~~
+# 1. Simulate data----
+# ~~~~~~~~~~~~~~~~~~~
+  # simulate data for the example
+  # log(fecundity) = log(alpha) + beta * log(length) + some noise
+  xx            <- seq(300, 500, 1)                          # independent variable (using fish length (mm) for the example, but this could be weight instead)
+  log.alpha     <- -11.938                                   # intercept parameter of log-log linear model
+  beta          <- 4.043                                     # slope parameter of log-log linear model (this is the same as the exponent parameter of the power function)  
+  error         <- rlnorm(length(xx), meanlog=0, sdlog=0.15) # simulate some noise
+  log.fecundity <- log.alpha + beta*log(xx) + error  
+  fecundity     <- exp(log.fecundity)                        # simulated fecundity data
+  
+  # create a data frame 
+  mydf <- data.frame(xx,fecundity)
+
+  
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
+# 2.Parameter estimation----
+# ~~~~~~~~~~~~~~~~~~~~~~~~~
+  # fit a simple linear model to the natural log transformed simulated data
+  lm.mod         <- lm(log(fecundity)~log(xx), data=mydf)
+  log.alpha.mod  <- coef(lm.mod)[1]
+  alpha.mod      <- exp(log.alpha.mod)  # note, this is the median
+  beta.mod       <- coef(lm.mod)[2]    
+  
+  # bias correct (bc) alpha to return the mean, instead of the median
+  bc.results.mod  <- bias_correct(lm.mod)
+  bc.alpha.mod    <- bc.results.mod[1]
+  # beta remains the same
+  
+  # parameter estimates for the power function:
+  # fecundity = alpha * length ^ beta
+  alpha.mod          # scaling coefficient, median
+  bc.alpha.mod       # scaling coefficient, mean (bias corrected)
+  beta.mod           # exponent
+
+  
+#~~~~~~~~~~~~~~~~~~~~~~~
+# 3. Visualize results----
+#~~~~~~~~~~~~~~~~~~~~~~~
+  yy.median  <- alpha.mod    * xx ^ beta.mod  # median
+  yy.mean    <- bc.alpha.mod * xx ^ beta.mod  # mean
+  
+  # plot the simulated data and the model fit
+  plot(fecundity~xx, data=mydf, main="Size-Fecundity Relationship", 
+       pch=19, col="gray", 
+       xlab="Length (cm)",
+       ylab="Fecundity")   
+  lines(yy.mean  ~ xx, lty=1,col="black")
+  lines(yy.median~ xx, lty=2,col="blue")
+  legend("topleft", bty='n', legend = c("mean","median","simulated data"), lty=c(1,2,NA), pch=c(NA,NA,19), col=c("black", "blue","gray"), cex=0.8)
+  text(450, 2.0e+05, labels=paste("y (mean) =",round(bc.alpha.mod,6),"x ^",round(beta.mod,3), sep=" "), cex=0.8)
+
